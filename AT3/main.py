@@ -1,54 +1,23 @@
-"""
-Arquivo main.py
-Demonstra o uso do módulo matrix.py com os exemplos da Atividade 3.
-"""
-
 from matrix import transpor_matriz, multiplicar_matriz
 
+def main():
+    # Simulação do main.py
 
-# ──────────────────────────────────────────────
-# Exemplo 1: Transposição de Matriz
-# ──────────────────────────────────────────────
-print("=" * 40)
-print("TRANSPOSIÇÃO DE MATRIZ")
-print("=" * 40)
+    # Exemplo de Transposição
+    A_transpor = [[1, 2], [3, 4], [5, 6]]
+    resultado_transp = transpor_matriz(A_transpor)
+    print("--- Transposição ---")
+    print(f"Entrada: {A_transpor}")
+    print(f"Saída:   {resultado_transp}")
 
-A = [[1, 2], [3, 4], [5, 6]]
-print(f"Matriz original (3x2):\n{A}")
+    # Exemplo de Multiplicação
+    A_mult = [[1, 2], [3, 4]]
+    B_mult = [[5, 6], [7, 8]]
+    resultado_mult = multiplicar_matriz(A_mult, B_mult)
+    print("\n--- Multiplicação ---")
+    print(f"Matriz A: {A_mult}")
+    print(f"Matriz B: {B_mult}")
+    print(f"Saída:    {resultado_mult}")
 
-transposta = transpor_matriz(A)
-print(f"\nMatriz transposta (2x3):\n{transposta}")
-# Saída esperada: [[1, 3, 5], [2, 4, 6]]
-
-
-# ──────────────────────────────────────────────
-# Exemplo 2: Multiplicação de Matrizes
-# ──────────────────────────────────────────────
-print("\n" + "=" * 40)
-print("MULTIPLICAÇÃO DE MATRIZES")
-print("=" * 40)
-
-A = [[1, 2], [3, 4]]
-B = [[5, 6], [7, 8]]
-print(f"Matriz A (2x2):\n{A}")
-print(f"\nMatriz B (2x2):\n{B}")
-
-resultado = multiplicar_matriz(A, B)
-print(f"\nResultado A x B (2x2):\n{resultado}")
-# Saída esperada: [[19, 22], [43, 50]]
-
-
-# ──────────────────────────────────────────────
-# Exemplo 3: Validação de dimensões incompatíveis
-# ──────────────────────────────────────────────
-print("\n" + "=" * 40)
-print("VALIDAÇÃO DE DIMENSÕES INCOMPATÍVEIS")
-print("=" * 40)
-
-C = [[1, 2, 3], [4, 5, 6]]   # 2x3
-D = [[1, 2], [3, 4]]          # 2x2  (incompatível: colunas de C ≠ linhas de D)
-print(f"Matriz C (2x3):\n{C}")
-print(f"\nMatriz D (2x2):\n{D}")
-
-resultado_invalido = multiplicar_matriz(C, D)
-print(f"\nResultado: {resultado_invalido}")
+if __name__ == "__main__":
+    main()
