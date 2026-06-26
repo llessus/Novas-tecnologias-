@@ -2,7 +2,13 @@
 
 Projeto acadêmico de **Ciência de Dados e Machine Learning** que utiliza **Regressão Linear Múltipla** para prever preços de imóveis com base em suas características.
 
-## 📋 Sobre o Projeto
+## � Abrir no Google Colab
+
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/llessus/Novas-tecnologias-/blob/main/Documents/easy%20portifolio/Novas-tecnologias-/trabalho%20final/projeto_regressao_imoveis.ipynb)
+
+---
+
+## �📋 Sobre o Projeto
 
 O mercado imobiliário é um setor de grande relevância econômica. Este projeto aplica técnicas de Machine Learning para estimar o preço de um imóvel utilizando o dataset real **House Sales in King County, USA**, contendo dados de vendas de imóveis na região de Seattle, Washington (EUA).
 
